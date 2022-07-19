@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const userSchema = mongoose.Schemaj({
+const userSchema = mongoose.Schema({
     name: {
         type: String,
         maxlength: 50
@@ -12,7 +12,11 @@ const userSchema = mongoose.Schemaj({
     },
     password:{
         type: String,
-        minlength: 50
+        minlength: 5
+    },
+    lastname:{
+        type:String,
+        maxlength:50
     },
     role: {
         type: Number,
