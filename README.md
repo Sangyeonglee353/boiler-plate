@@ -13,6 +13,9 @@
  - mongoose: Mongo DB의 schema 생성 및 DB 연결을 위함
  - nodemon: 서버 가동 중 내용 수정시 자동으로 반영되도록 하기 위함
  - body-parser: express()로 사이트의 body에 작성된 값을 읽어내기 위함
+ - bcrypt: 비밀번호 암호화
+ - jsonwebtoken: 토큰 생성
+ - cookie-parser: 쿠키에 데이터 저장하기 위함
 
 ## 참고 강의
 - 인프런_따라하며 배우는 노드, 리액트 시리즈 - 기본 강의
