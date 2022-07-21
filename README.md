@@ -17,5 +17,19 @@
  - jsonwebtoken: 토큰 생성
  - cookie-parser: 쿠키에 데이터 저장하기 위함
 
+## React_src 폴더 구성
+ - _actions: Redux
+ - _reducers: Redux
+ - components
+    - views
+        - LandingPage: 첫 페이지
+        - LoginPage: 로그인 페이지
+        - NavBar: 내비게이션 바
+        - RegisterPage: 회원가입 페이지
+ - App.js: Routing 관리
+ - Config.js: 환경 변수 정의
+ - hoc: Higher Order Component
+ - utils: 여러 군데에서 쓰일 수 있는 것들을 모아둠
+
 ## 참고 강의
 - 인프런_따라하며 배우는 노드, 리액트 시리즈 - 기본 강의
