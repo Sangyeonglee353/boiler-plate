@@ -16,6 +16,8 @@
  - bcrypt: 비밀번호 암호화
  - jsonwebtoken: 토큰 생성
  - cookie-parser: 쿠키에 데이터 저장하기 위함
+ - axios: 비동기 전송
+ - http-proxy-middleware: CORS 이슈 해결
 
 ## React_src 폴더 구성
  - _actions: Redux

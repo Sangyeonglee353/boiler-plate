@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 5000
+
 
 /* 서버 연결 */
 const bodyParser = require('body-parser');
@@ -30,6 +30,10 @@ mongoose.connect(config.mongoURI, {
 
 app.get('/', (req, res) => res.send('Hello World!~~안녕하신가요??'))
 
+/* 서버 통신 Test */
+app.get('/api/hello', (req, res) => {
+    res.send("안녕하세요 ~ ")
+})
 /* 회원 가입 */
 app.post('/api/users/register', (req, res) => {
 
@@ -114,5 +118,7 @@ app.get('/api/users/logout', auth, (req, res) => {
             })
         })
 })
+
+const port = 5000
 /* 정상 접속 확인 */
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
