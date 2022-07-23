@@ -18,7 +18,15 @@
  - cookie-parser: 쿠키에 데이터 저장하기 위함
  - axios: 비동기 전송
  - http-proxy-middleware: CORS 이슈 해결
+ - concurrently: server와 client를 동시에 시작
+ - redux
+ - react-redux
+ - redux-promise
+ - redux-thunk
 
+3. 확장 프로그램
+ - Redux DevTools
+ 
 ## React_src 폴더 구성
  - _actions: Redux
  - _reducers: Redux
@@ -32,6 +40,14 @@
  - Config.js: 환경 변수 정의
  - hoc: Higher Order Component
  - utils: 여러 군데에서 쓰일 수 있는 것들을 모아둠
+
+## React CSS Framework
+ - Material UI
+ - React Bootstrap
+ - Semantic UI
+ - Ant Design
+ - Materialize
+ ...
 
 ## 참고 강의
 - 인프런_따라하며 배우는 노드, 리액트 시리즈 - 기본 강의
