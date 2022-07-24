@@ -48,7 +48,7 @@ app.post('/api/users/register', (req, res) => {
         // 실패시 json형태로 에러 메시지 전달
         if(err) return res.json({success:false, err})
         return res.status(200).json({
-            sucess:true
+            success:true
         })
     })
 })
@@ -59,7 +59,7 @@ app.post('/api/users/login', (req, res) => {
     User.findOne({email: req.body.email}, (err, userInfo) =>{
         if(!userInfo){
             return res.json({
-                loginSucess: false,
+                loginSuccess: false,
                 message:"제공된 이메일에 해당하는 유저가 없습니다."
             })
         }
@@ -67,7 +67,7 @@ app.post('/api/users/login', (req, res) => {
         userInfo.comparePassword(req.body.password, (err, isMatch) => {
             if(!isMatch)
             return res.json({
-                loginSucess: false,
+                loginSuccess: false,
                 message: "비밀번호가 틀렸습니다."
             })
             
@@ -80,7 +80,7 @@ app.post('/api/users/login', (req, res) => {
                     return res.cookie("x_auth", userInfo.token)
                     .status(200)
                     .json({ 
-                        loginSucess: true,
+                        loginSuccess: true,
                         userId: userInfo._id
                     });
                 }
@@ -112,9 +112,9 @@ app.get('/api/users/logout', auth, (req, res) => {
         { _id: req.user._id},
         {token: ""},
         (err, user) => {
-            if(err) return res.json({sucess: false, err});
+            if(err) return res.json({success: false, err});
             return res.status(200).send({
-                sucess: true
+                success: true
             })
         })
 })
