@@ -39,6 +39,7 @@
  - App.js: Routing 관리
  - Config.js: 환경 변수 정의
  - hoc: Higher Order Component
+   - 페이지별 접속 권한을 관리
  - utils: 여러 군데에서 쓰일 수 있는 것들을 모아둠
 
 ## React CSS Framework
